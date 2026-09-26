@@ -3,50 +3,71 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ZAIN STEEL | زين للصلب - المليحة</title>
+<title>ZAIN STEEL - زين للصلب</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Tahoma,Arial,sans-serif}
-body{background:#070c18;color:#fff;scroll-behavior:smooth}
-header{background:#070c18ee;backdrop-filter:blur(12px);display:flex;justify-content:space-between;align-items:center;padding:12px 5%;border-bottom:1px solid #112040;position:sticky;top:0;z-index:100}
-.logo{font-weight:900;font-size:22px;line-height:.9}.logo span{color:#2e7df0}
-nav{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
-nav a{color:#b0bdd1;text-decoration:none;font-size:12px}
-.btn{background:#2e5aa8;color:#fff;padding:9px 16px;border-radius:10px;text-decoration:none;font-weight:bold;font-size:13px;display:inline-block}
-.lang{border:1px solid #2e5aa8;color:#fff;background:transparent;padding:7px 12px;border-radius:8px;cursor:pointer;font-size:12px}
-.hero{padding:60px 5% 30px;text-align:center;background:radial-gradient(circle at 50% 0%,#1a2d5a 0%,#070c18 65%)}
-.hero h1{font-size:28px;line-height:1.5;margin-bottom:12px}.hero h1 span{color:#2e7df0}
-.hero p{color:#9fb0ca;max-width:650px;margin:0 auto 18px;line-height:1.8;font-size:13px}
-.hero-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
-.btn-outline{border:1px solid #2e5aa8;padding:9px 16px;border-radius:10px;color:#fff;text-decoration:none;font-size:13px}
-.badge{margin:30px auto 0;background:linear-gradient(135deg,#0d1730,#11224d);border:1px solid #1a3a7a;border-right:6px solid #2e7df0;padding:14px 18px;border-radius:14px;display:inline-flex;gap:12px;align-items:center}
-section{padding:50px 5%}
-h2{text-align:center;font-size:26px;margin-bottom:6px}.line{width:50px;height:3px;background:#2e7df0;margin:0 auto 10px;border-radius:10px}
-.sub{text-align:center;color:#9fb0ca;font-size:12px;margin-bottom:30px}
-.grid{display:grid;grid-template-columns:1fr;gap:18px;max-width:1000px;margin:0 auto}
-@media(min-width:700px){.grid{grid-template-columns:repeat(3,1fr)} .grid2{grid-template-columns:repeat(2,1fr)}}
-.card{background:#0d152b;border:1px solid #1e3a6e;border-radius:16px;padding:20px}
-.map-box{background:#0d152b;border:1px solid #1e3a6e;border-radius:18px;overflow:hidden;max-width:900px;margin:0 auto}
-.map-box iframe{width:100%;height:350px;border:0;filter:invert(90%) hue-rotate(180deg)}
-.contact{text-align:center;background:radial-gradient(circle at 50% 100%,#11295a,#070c18)}
-footer{background:#050a15;text-align:center;padding:16px;color:#5a6c8a;font-size:11px;border-top:1px solid #112040}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Tahoma,sans-serif}
+body{background:#070c18;color:#fff}
+header{background:#070c18;display:flex;justify-content:space-between;align-items:center;padding:18px 5%;border-bottom:1px solid #112040;position:sticky;top:0;z-index:10}
+.logo{font-weight:900;font-size:26px}.logo span{color:#2e7df0}
+nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+nav a{color:#b0bdd1;text-decoration:none;font-size:14px}
+nav a.active{color:#2e7df0;border-bottom:2px solid #2e7df0;padding-bottom:3px}
+.btn{background:#2e5aa8;color:#fff;padding:10px 18px;border-radius:10px;text-decoration:none;font-weight:bold;font-size:14px}
+.hero{padding:70px 5%;display:flex;justify-content:space-between;align-items:center;gap:20px;background:radial-gradient(circle at 70% 20%,#1a2d5a, #070c18 60%)}
+.hero h1{font-size:32px;line-height:1.4;margin-bottom:12px}.hero h1 span{color:#2e7df0}
+.hero p{color:#9fb0ca;max-width:520px;line-height:1.7;margin-bottom:20px;font-size:14px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn-outline{border:1px solid #2e5aa8;padding:10px 18px;border-radius:10px;color:#fff;text-decoration:none;font-size:14px}
+.badge{background:#0d1730;border:1px solid #1a3a7a;border-right:7px solid #2e7df0;padding:18px;border-radius:14px;display:flex;gap:12px;align-items:center;min-width:220px}
+.badge-icon{width:52px;height:52px;background:#2e5aa8;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px}
+.services{padding:50px 5%;text-align:center}
+.services h2{font-size:32px}.services h2::after{content:'';display:block;width:70px;height:3px;background:#2e7df0;margin:8px auto}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
+.card{background:#0d152b;border:1px solid #1e3a6e;border-radius:16px;padding:22px;padding-top:45px;position:relative;margin-top:28px}
+.card-icon{width:60px;height:60px;background:#2e5aa8;border-radius:14px;position:absolute;top:-30px;left:50%;transform:translateX(-50%);display:flex;align-items:center;justify-content:center;font-size:26px}
+.card h3{margin:12px 0 8px;font-size:19px}.card p{color:#9fb0ca;font-size:13px;line-height:1.6}
+.card a{color:#2e7df0;text-decoration:none;font-size:12px;margin-top:12px;display:inline-block}
+.bar{background:#11295a;display:flex;justify-content:center;gap:40px;padding:12px;color:#cbd7ea;font-size:13px;flex-wrap:wrap}
+@media(max-width:800px){.hero{flex-direction:column}.grid{grid-template-columns:1fr}.bar{flex-direction:column;gap:8px;text-align:center}}
 </style>
 </head>
 <body>
 <header>
-<div class="logo">ZAIN<br><span>STEEL</span></div>
+<div class="logo">ZAIN <span>STEEL</span></div>
 <nav>
-<a href="#home">الرئيسية</a>
-<a href="#services">الخدمات</a>
-<a href="#map">موقعنا</a>
-<button class="lang" onclick="toggleLang()" id="langBtn">EN</button>
-<a class="btn" href="https://wa.me/963945161715">واتساب</a>
+<a class="active" href="#">الرئيسية</a>
+<a href="#">الخدمات</a>
+<a href="#">المشاريع</a>
+<a href="#">عن الشركة</a>
+<a href="https://wa.me/9639XXXXXXXX">تواصل</a>
+<a class="btn" href="#">اطلب عرض سعر</a>
 </nav>
 </header>
-
-<section class="hero" id="home">
-<h1><span>زين للصلب</span> - المليحة</h1>
-<p data-ar="هناجر ومستودعات وأبواب ودرابزين في المليحة وريف دمشق - جودة عالية وسعر منافس." data-en="Hangars, warehouses, doors & railings in Al-Maliha & Damascus countryside.">هناجر ومستودعات وأبواب ودرابزين في المليحة وريف دمشق - جودة عالية وسعر منافس.</p>
+<section class="hero">
+<div>
+<h1><span>زين للصلب</span> - قوة تبني مستقبلك</h1>
+<p>نصمم ونصنع ونركب حلول الصلب عالية الجودة للهناجر والمستودعات والأبواب والدرابزين بأحدث المعايير.</p>
 <div class="hero-actions">
-<a class="btn" href="https://wa.me/963945161715?text=مرحبا%20بدي%20عرض%20سعر">اطلب عرض سعر</a>
-<a class="btn-outline" href="https://maps.app.goo.gl/aSYaMWErMek6X3Gs9?g_st=awb" target="_blank">📍 موقعنا على الخريطة</a>
-</
+<a class="btn" href="#">اطلب الآن</a>
+<a class="btn-outline" href="#">تعرف على خدماتنا</a>
+</div>
+</div>
+<div class="badge">
+<div class="badge-icon">★</div>
+<div><h3 style="font-size:20px">+25 سنة خبرة</h3><p style="color:#9fb0ca;font-size:12px">خبرة موثوقة منذ 1999</p></div>
+</div>
+</section>
+<section class="services">
+<h2>خدماتنا</h2>
+<p style="color:#9fb0ca;font-size:13px">حلول متكاملة من التصميم إلى التركيب</p>
+<div class="grid">
+<div class="card"><div class="card-icon">⚙️</div><h3>درابزين</h3><p>درابزين وسلالم وسواتر حديدية بتشطيبات ممتازة</p><a href="#">→ اعرف المزيد</a></div>
+<div class="card"><div class="card-icon">🚪</div><h3>أبواب</h3><p>أبواب حديدية وألمنيوم آمنة وعازلة بتصاميم عصرية</p><a href="#">→ اعرف المزيد</a></div>
+<div class="card"><div class="card-icon">🏗️</div><h3>هناجر</h3><p>تصميم وتنفيذ هناجر ومستودعات صناعية متينة</p><a href="#">→ اعرف المزيد</a></div>
+</div>
+</section>
+<div class="bar">
+<span>📞 24/7 دعم</span><span>✔ 100% جودة مضمونة</span><span>📦 +500 مشروع مكتمل</span>
+</div>
+</body>
+</html>
