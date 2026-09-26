@@ -1,21 +1,246 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ZAIN STEEL | زين للصلب</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Tahoma,Arial}
-body{background:#060c1c;color:#fff}
-a{text-decoration:none}
-header{position:sticky;top:0;z-index:100;background:rgba(6,12,28,.92);backdrop-filter:blur(16px);border-bottom:1px solid #1a325e;display:flex;justify-content:space-between;align-items:center;padding:14px 5%}
-.logo{font-weight:900;font-size:22px;line-height:.9;letter-spacing:1px}
-.logo span{color:#2e7df2}
-nav{display:flex;gap:12px;align-items:center}
-nav a{color:#a8b9d6;font-size:12px}
-.btn{background:#2e7df2;color:#fff;padding:10px 18px;border-radius:10px;font-weight:800;font-size:12px}
-.ghost{border:1px solid #2e7df2;color:#fff;padding:8px 14px;border-radius:8px;font-size:11px}
-.hero{min-height:88vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:40px 5%;background:radial-gradient(60% 80% at 50% 0%,#1b3a7e 0%,#060c1c 70%)}
-.hero h1{font-size:56px;font-weight:900;letter-spacing:4px}
-.hero h1 span{color:#2e7df2}
-.hero .ar
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>زين ستيل | Zain Steel - لتصنيع وتجارة الحديد والصلب</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- الهيدر والقائمة -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>زين ستيل <span>ZAIN STEEL</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#about">من نحن</a></li>
+                    <li><a href="#products">منتجاتنا</a></li>
+                    <li><a href="#contact">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- الواجهة الرئيسية -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h2>القوة والجودة في عالم الحديد والصلب</h2>
+            <p>نقدم أفضل حلول وصناعات الصلب والهياكل المعدنية بفي أعلى معايير الجودة العالمية.</p>
+            <a href="#contact" class="btn">اطلب اقتباس سعر</a>
+        </div>
+    </section>
+
+    <!-- من نحن -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>من نحن</h2>
+            <p>تعد شركة **زين ستيل** من الشركات الرائدة في مجال توريد وتصنيع كافة أشكال الحديد والصلب والهياكل المعدنية للمشاريع الإنشائية والصناعية.</p>
+        </div>
+    </section>
+
+    <!-- المنتجات -->
+    <section id="products" class="section gray-bg">
+        <div class="container">
+            <h2>منتجاتنا وخدماتنا</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>حديد التسليح</h3>
+                    <p>أجود أنواع حديد التسليح بمختلف الأقطار والمواصفات.</p>
+                </div>
+                <div class="card">
+                    <h3>قطاعات الصلب (Beams & Channels)</h3>
+                    <p>قطاعات هكسا، زوايا، وياكربونات صناعية للمشاريع الضخمة.</p>
+                </div>
+                <div class="card">
+                    <h3>الألواح والصاج</h3>
+                    <p>ألواح حديد مجلفن، أسود، ومسحوب على البارد والساخن.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- التواصل -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>تواصل معنا</h2>
+            <p>لأي استفسارات أو طلبات أسعار، يرجى ملء النموذج التالي:</p>
+            <form id="contactForm" class="contact-form">
+                <input type="text" placeholder="الاسم الكامل" required>
+                <input type="email" placeholder="البريد الإلكتروني" required>
+                <textarea placeholder="تفاصيل الطلب أو الاستفسار" rows="5" required></textarea>
+                <button type="submit" class="btn">إرسال الطلب</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer>
+        <p>جميع الحقوق محفوظة © 2026 - زين ستيل (Zain Steel)</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    direction: rtl;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1a252f;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    color: #f39c12; /* لون الذهبي/الحديد */
+}
+
+.logo span {
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122') center/cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #f39c12;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #d35400;
+}
+
+/* Sections */
+.section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.gray-bg {
+    background-color: #e9ecef;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1a252f;
+}
+
+/* Cards */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-top: 4px solid #f39c12;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #1a252f;
+}
+
+/* Form */
+.contact-form {
+    max-width: 600px;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #1a252f;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
